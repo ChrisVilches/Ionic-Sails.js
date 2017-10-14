@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { UrlService } from '../services/url.service';
 
 import { AboutPage } from '../pages/about/about';
 import { ChatPage } from '../pages/chat/chat';
@@ -12,6 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ShortenLongStringPipe } from '../pipes/shorten-long-string.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutPage,
     ChatPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ShortenLongStringPipe
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     TabsPage
   ],
   providers: [
+    UrlService,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

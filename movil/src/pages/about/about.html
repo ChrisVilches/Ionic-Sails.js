@@ -1,11 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Probando los pipes
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
+<p>La siguiente string sera truncada usando un pipe.</p>
+
+<p>
+  {{ text | shortenLongString:100 }}
+</p>
 </ion-content>

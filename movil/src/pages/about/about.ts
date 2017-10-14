@@ -7,7 +7,11 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
+  text: string = "Esta es una string muy larga, muy larga, muy larga, muy larga, muy larga, muy larga, muy larga, muy larga, muy larga."
+
   constructor(public navCtrl: NavController) {
+
+
 
   }
 

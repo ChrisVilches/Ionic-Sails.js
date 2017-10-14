@@ -24,17 +24,6 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  'GET /subscribeToMessages': {
-    controller: 'MessageController',
-    action: 'subscribeToMessages'
-  },
-
-  'GET /quote/random': {
-    controller: 'QuoteController',
-    action: 'random'
-  }
-
-
 
   /***************************************************************************
   *                                                                          *
